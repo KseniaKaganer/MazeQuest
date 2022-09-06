@@ -1,0 +1,34 @@
+{
+    "name": "ControllerActionVR",
+    "maps": [
+        {
+            "name": "Default",
+            "id": "dc564b1f-8437-41a0-87d4-786c10390ff1",
+            "actions": [
+                {
+                    "name": "RestartGame",
+                    "type": "Button",
+                    "id": "6e2f52b0-a0b5-4693-baf2-416b569bb6d6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "9b7491b9-d009-492e-89f0-fe8d1e399de9",
+                    "path": "<OculusTouchController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RestartGame",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
