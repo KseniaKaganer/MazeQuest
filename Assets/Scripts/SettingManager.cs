@@ -96,7 +96,6 @@ public class SettingManager : MonoBehaviour
             {
                 case 5:
                     //Set Maze Pose Mode
-                    //ToggleSetMaze();
                     InputTrigger.action.started -= OpenSettingPanel;
                     InputTrigger.action.started += TransofrMazeHandle;
                     break;
@@ -122,7 +121,6 @@ public class SettingManager : MonoBehaviour
         } else
         {
             FrameToggle[SettingIndex].GetComponent<Image>().color = settingColor;
-            //ToggleSetMaze();
             InputTrigger.action.started += OpenSettingPanel;
             InputTrigger.action.started -= TransofrMazeHandle;
         }
@@ -164,9 +162,7 @@ public class SettingManager : MonoBehaviour
         {
             float updateVal;
             
-
             Debug.Log(vec.x + "   ,   " + vec.y);
-            Debug.Log("  SettingIndex  :::  " + SettingIndex);
             Vector3 pos = Maze.position;
 
             switch (SettingIndex)
@@ -210,29 +206,6 @@ public class SettingManager : MonoBehaviour
             }
         }
 
-
-
-
-
-
-        //Debug.Log("YChangeHandle " + vec);
-        //Vector3 pos = Maze.position;
-        //if (Math.Abs(vec.x) < trashold && vec.y > 0)
-        //{
-        //    Maze.position = new Vector3(pos.x, pos.y + editSteps, pos.z);
-        //}
-        //else if (Math.Abs(vec.x) < trashold && vec.y < 0)
-        //{
-        //    Maze.position = new Vector3(pos.x, pos.y - editSteps, pos.z);
-        //}
-        //else if (vec.x > 0 && Math.Abs(vec.y) < trashold)
-        //{
-        //    Maze.position = new Vector3(pos.x + editSteps, pos.y, pos.z);
-        //}
-        //else if (vec.x < 0 && Math.Abs(vec.y) < trashold)
-        //{
-        //    Maze.position = new Vector3(pos.x - editSteps, pos.y, pos.z);
-        //}
     }
 
     private void TransofrMazeHandle(InputAction.CallbackContext contex)
